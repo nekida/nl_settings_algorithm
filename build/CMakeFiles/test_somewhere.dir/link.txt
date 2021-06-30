@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-gcc-9 -g  -rdynamic CMakeFiles/test_somewhere.dir/test_somewhere.c.o  -o test_somewhere 
