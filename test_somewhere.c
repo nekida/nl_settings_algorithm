@@ -19,12 +19,9 @@ int main (int argc, char *argv[])
     int j;
     for (int i = 0, j = 0; i < SIZE; ) {
         int needed_num = *argv[i + 1] - '0';
-        if (needed_num == src_array[j]) {
-            dst_array[i++] = src_array[j++];
-        } else {
-            j++;
-        }
-        if (j == SIZE) j = 0;
+        (needed_num == src_array[j]) ? (dst_array[i++] = src_array[j++]) : (j++);
+        if (j == SIZE) 
+            j = 0;
     }
 
     for (int i = 0; i < SIZE; i++)
